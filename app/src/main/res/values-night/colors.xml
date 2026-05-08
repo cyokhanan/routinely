@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="habit_card_bg">#1E1E1E</color>
+    <color name="habit_title">#FFFFFF</color>
+    <color name="habit_desc">#B0B0B0</color>
+    <color name="habit_chip_bg">#2A2A2A</color>
+    <color name="habit_chip_text">#D1D5DB</color>
+    <color name="habit_primary">#A78BFA</color>
+    <color name="habit_primary_light">#3B2A63</color>
+    <color name="habit_button_bg">#2C2C2C</color>
+    <color name="habit_button_text">#E2E8F0</color>
+    <color name="habit_icon_bg">#2A2F45</color>
+    <color name="habit_icon_tint">#93C5FD</color>
+</resources>
