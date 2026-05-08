@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="habit_card_bg">#FFFFFF</color>
+    <color name="habit_title">#1E293B</color>
+    <color name="habit_desc">#64748B</color>
+    <color name="habit_chip_bg">#F1F5F9</color>
+    <color name="habit_chip_text">#475569</color>
+    <color name="habit_primary">#7C3AED</color>
+    <color name="habit_primary_light">#E9D5FF</color>
+    <color name="habit_button_bg">#F1F5F9</color>
+    <color name="habit_button_text">#64748B</color>
+    <color name="habit_icon_bg">#EAF7FF</color>
+    <color name="habit_icon_tint">#5FA8D3</color>
 </resources>

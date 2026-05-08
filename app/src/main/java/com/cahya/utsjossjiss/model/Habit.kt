@@ -1,4 +1,4 @@
-package com.cahya.utsjossjiss.data.model
+package com.cahya.utsjossjiss.model
 
 data class Habit(
     val id: String = "",

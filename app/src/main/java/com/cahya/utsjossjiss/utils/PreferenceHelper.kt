@@ -1,8 +1,8 @@
-package com.cahya.utsjossjiss.data.local
+package com.cahya.utsjossjiss.utils
 
 import android.content.Context
 import android.content.SharedPreferences
-import com.cahya.utsjossjiss.data.model.Habit
+import com.cahya.utsjossjiss.model.Habit
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 

@@ -37,8 +37,8 @@ class CreateHabitFragment : Fragment() {
         val spinnerIcon = view.findViewById<Spinner>(R.id.spinnerIcon)
         val btnCreate = view.findViewById<Button>(R.id.btnCreate)
 
-        // Setup Spinner options
-        val iconOptions = arrayOf("Check", "Star", "Heart")
+        // Setup Spinner options with the new PNG icon names
+        val iconOptions = arrayOf("Checklist", "Food", "Sleep", "Walk", "Water")
         val spinnerAdapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_dropdown_item, iconOptions)
         spinnerIcon.adapter = spinnerAdapter
 
@@ -51,7 +51,7 @@ class CreateHabitFragment : Fragment() {
             if (name.isNotEmpty() && desc.isNotEmpty() && goalStr.isNotEmpty()) {
                 val goal = goalStr.toIntOrNull()
                 if (goal != null && goal > 0) {
-                    viewModel.createHabit(name, desc, goal, selectedIcon)
+                    viewModel.createHabit(requireContext(), name, desc, goal, selectedIcon)
                     Toast.makeText(requireContext(), "Habit Berhasil Dibuat", Toast.LENGTH_SHORT).show()
                     findNavController().navigateUp()
                 } else {

@@ -6,19 +6,18 @@ import androidx.lifecycle.ViewModel
 
 class LoginViewModel : ViewModel() {
 
-    private val _loginResult = MutableLiveData<Boolean>()
-    val loginResult: LiveData<Boolean> = _loginResult
+    private val _loginStatus = MutableLiveData<Boolean>()
+    val loginStatus: LiveData<Boolean> get() = _loginStatus
 
-    private val _errorText = MutableLiveData<String>()
-    val errorText: LiveData<String> = _errorText
+    private val _errorMessage = MutableLiveData<String>()
+    val errorMessage: LiveData<String> get() = _errorMessage
 
-    fun checkLogin(username: String, password: String) {
+    fun attemptLogin(username: String, password: String) {
         if (username == "student" && password == "123") {
-            _loginResult.value = true
-            _errorText.value = ""
+            _loginStatus.value = true
         } else {
-            _loginResult.value = false
-            _errorText.value = "Username atau password salah"
+            _loginStatus.value = false
+            _errorMessage.value = "Username atau password salah!"
         }
     }
 }
